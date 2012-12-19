@@ -11,7 +11,8 @@ This seems to do it.
 
 Notes
 --------
-Not entirely non-interactive. Be prepared to answer "yes", enter an admin name for the site, and the admin user's passowrd.
+Not entirely non-interactive. Be prepared to answer "yes", enter an admin name for the site, and the admin user's password.
+
 Sites
 -------
 Documentation: http://graphite.readthedocs.org/en/0.9.10/
