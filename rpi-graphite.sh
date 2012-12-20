@@ -27,7 +27,7 @@ install apache2 \
 	python-pip \
 	python-cairo \
 	python-django \
-	python-djago-tagging \
+	python-django-tagging \
 	libapache2-mod-wsgi \
 	libapache2-mod-python \
 	python-twisted \
