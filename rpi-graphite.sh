@@ -7,6 +7,12 @@
 #Default is disabled
 #Requires interaction: yes, admin name, password
 
+#check for root
+if [[ $EUID -ne 0 ]]; then
+	echo "$0 must be run as root." 1>&2
+    	exit 1
+fi
+
 #Install Function - Installs packages from repositories
 install ()
 {
@@ -73,7 +79,8 @@ mkdir -p /etc/httpd/wsgi/
 cp /opt/graphite/webapp/graphite/local_settings.py.example /opt/graphite/webapp/graphite/local_settings.py
 
 #SyncDB - requires interaction
-cd /opt/graphite/webapp/graphite && python manage.py syncdb
+cd /opt/graphite/webapp/graphite && python manage.py syncdb #prompts for input
+#OR cd /opt/graphite/webapp/graphite && python manage.py syncdb --noinput
 
 #set permissions
 chown -R www-data:www-data /opt/graphite/storage
