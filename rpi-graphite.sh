@@ -51,13 +51,12 @@ wget https://raw.github.com/tmm1/graphite/master/examples/example-graphite-vhost
 sed -i 's|80|8080|' /etc/apache2/sites-available/graphite
 echo "Listen 8080" >> /etc/apache2/sites-available/graphite
 
-#wsgi from example
+#conf from example
 cp /opt/graphite/conf/graphite.wsgi.example /opt/graphite/conf/graphite.wsgi
-cp /opt/graphite/conf/aggretation-rules.conf.example /opt/graphite/conf/aggregation-rules.conf
+cp /opt/graphite/conf/aggregation-rules.conf.example /opt/graphite/conf/aggregation-rules.conf
 cp /opt/graphite/conf/dashboard.conf.example /opt/graphite/conf/dashboard.conf
 cp /opt/graphite/conf/graphTemplates.conf.example /opt/graphite/conf/graphTemplates.conf
 cp /opt/graphite/conf/relay-rules.conf.example /opt/graphite/conf/relay-rules.conf
-cp /opt/graphite/conf/
 #carbon.conf from example
 cp /opt/graphite/conf/carbon.conf.example /opt/graphite/conf/carbon.conf
 #storage aggregation conf from example
