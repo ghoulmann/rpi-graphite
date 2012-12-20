@@ -16,3 +16,7 @@ Not entirely non-interactive. Be prepared to answer "yes", enter an admin name f
 Sites
 -------
 Documentation: http://graphite.readthedocs.org/en/0.9.10/
+
+To DO
+-------
+Not all the conf.example files are being copied to conf files.
