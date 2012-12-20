@@ -56,6 +56,9 @@ cp /opt/graphite/conf/graphite.wsgi.example /opt/graphite/conf/graphite.wsgi
 
 #carbon.conf from example
 cp /opt/graphite/conf/carbon.conf.example /opt/graphite/conf/carbon.conf
+#storage aggregation conf from example
+cp /opt/graphite/conf/storage-aggregation.conf.example /opt/graphite/conf/storage-aggregation.conf
+
 
 #storage schemas from example
 cp /opt/graphite/conf/storage-schemas.conf.example /opt/graphite/conf/storage-schemas.conf
